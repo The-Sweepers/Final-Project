@@ -29,7 +29,9 @@ actualSecs = millis()/1000; //convert milliseconds to seconds
 
 textAlign(CENTER);
 fill(255);
-text(scrnSecs,(width/2)+20, (height/2));
+text(scrnSecs,(width/2)+20, (height/2));//NEED TO CHANGE PLACEMENT OF TEXT
 text(":",width/2, height/2);
 text(scrnMins,(width/2)-20, (height/2));
 }
+
+//NEED TO ADD STOP TIMER @ END OF GAME
