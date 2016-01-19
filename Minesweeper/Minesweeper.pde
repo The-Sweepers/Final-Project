@@ -1,11 +1,11 @@
-int X = 0;  //initialize x,y, and n
+int X = 0;  //initialize X,Y, and n
 int Y = 0;
 Block[][] a = new Block[9][9]; //create a 2D array of the block class with the dimensions of 9X9
 int n;
 
 void setup() {
   size(650, 650);     //set the size of the canvas
-  for (int X = 0; X < 9; X++) {    //create a for loop too draw the grid for the x and y locations
+  for (int X = 0; X < 9; X++) {    //create a for loop to draw the grid for the x and y locations
     for (int Y = 0; Y < 9; Y ++) {
       a[X][Y] = new Block(X*50 + 100, Y*50 + 100);   //using the block class give the values of the array
     }
@@ -14,8 +14,8 @@ void setup() {
 }
 
 void draw() {
-  background(0);   //set the backgroun to black
-  for (int X = 0; X < 9; X++) {   //for loop to draw the grid for the x and y values
+  background(0);   //set the background to black
+  for (int X = 0; X < 9; X++) {   //for loop to draw the grid for the x and y values, 
     for (int Y = 0; Y < 9; Y++) {
       a[X][Y].display();     //using the display method draw the blocks
       if (mouseX > a[X][Y].x && mouseX < a[X][Y].x + 50 && mouseY > a[X][Y].y && mouseY < a[X][Y].y +50) {   
