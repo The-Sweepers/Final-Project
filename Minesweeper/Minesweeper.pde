@@ -163,7 +163,7 @@ void mouseClicked() {  //mouse clicked
   for (int X = 0; X < 9; X++) {   //while in the grid
     for (int Y = 0; Y < 9; Y++) {
       if (mouseX > a[X][Y].x && mouseX < a[X][Y].x + 50 && mouseY > a[X][Y].y && mouseY < a[X][Y].y +50) {  //if the mouse is clicked within a certain box
-        if (mouseButton == LEFT && a[X][Y].revealed == false) {
+        if (mouseButton == LEFT && a[X][Y].revealed == false && a[X][Y].flagged == false) {
           a[X][Y].disappear();   //use the method to cause the block to dissapear
           u++;
           if (a[X][Y].hasMine == false) {  //if the box is not a mine
