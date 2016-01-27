@@ -35,7 +35,6 @@ void setup() {
   lose = false; //set lose to false
   flag = loadImage("ACAD-logo.png"); //load image from data folder
   n = 0;   //declare the value for n
-<<<<<<< HEAD
   score = 10; //start the score at 10
   loss = loadImage("maher-mine-inverted.png"); //load image from data folder
   font = createFont("Courier New", 50); //load font
@@ -43,15 +42,6 @@ void setup() {
   u = 0; //set u o 0
   win = false; //set win to false
   winpic = loadImage("maher-mine-sunglasses.png"); //load image from data folder
-=======
-  score = 10;
-  loss = loadImage("maher-mine-inverted.png");
-  font = createFont("OratorStd", 50);
-  textFont(font);
-  u = 0;
-  win = false;
-  winpic = loadImage("maher-mine-sunglasses.png");
->>>>>>> origin/Development
 }
 
 void draw() {
