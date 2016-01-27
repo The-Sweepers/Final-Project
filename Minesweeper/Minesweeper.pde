@@ -35,6 +35,7 @@ void setup() {
   lose = false; //set lose to false
   flag = loadImage("ACAD-logo.png"); //load image from data folder
   n = 0;   //declare the value for n
+<<<<<<< HEAD
   score = 10; //start the score at 10
   loss = loadImage("maher-mine-inverted.png"); //load image from data folder
   font = createFont("Courier New", 50); //load font
@@ -42,10 +43,18 @@ void setup() {
   u = 0; //set u o 0
   win = false; //set win to false
   winpic = loadImage("maher-mine-sunglasses.png"); //load image from data folder
+=======
+  score = 10;
+  loss = loadImage("maher-mine-inverted.png");
+  font = createFont("OratorStd", 50);
+  textFont(font);
+  u = 0;
+  win = false;
+  winpic = loadImage("maher-mine-sunglasses.png");
+>>>>>>> origin/Development
 }
 
 void draw() {
-  background(#fae9e1);   //set the background to black
 
   actualSecs = millis()/1000; //convert milliseconds to seconds
   actualMins = millis() /1000 / 60; //convert milliseconds to minutes
@@ -62,6 +71,8 @@ void draw() {
   if (timeExists) {
     displaySec = scrnSecs;  //display seconds
   } 
+
+  background(#fae9e1);   //set the background to black
 
   textAlign(CENTER, CENTER);  //text align
   textSize(25); //set text size to 25
